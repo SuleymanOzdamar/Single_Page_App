@@ -1,0 +1,215 @@
+.mainSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeImg {
+    width: 300px;
+}
+
+.contentBox {
+    width: 40%;
+    padding-left: 1rem;
+}
+
+.contentBox h1{
+    font-size: 2.5rem;
+    margin-top: 30px;
+}
+
+.contentBox p {
+    font-size: 1.2rem;
+    margin: 1rem 0.5rem;
+    padding: 0.7rem;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.contentBox h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+}
+
+.lis {
+    list-style-type: none;
+}
+
+.information {
+    text-decoration: none;
+}
+
+.btnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.btn {
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    background-image: linear-gradient(rgba(255, 255, 3, 0.945), rgb(233, 136, 136)), radial-gradient( circle at bottom right, purple, yellow );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    margin-bottom: 10px;
+}
+
+.information {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    color: darkblue;
+}
+
+.imgContainer {
+    width: 20%;
+}
+
+.policy {
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.policy h1 {
+    margin-bottom: 10px;
+}
+
+.policy p {
+    margin-bottom: 10px;
+}
+
+.policy .bottom {
+    margin-bottom: 100px;
+}
+
+.educations {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.educationsContainer h1 {
+    text-align: center;
+}
+
+.card {
+    width: 25%;
+    text-align: center;
+    box-shadow: 0 0 3px black;
+    padding: 1rem;
+}
+
+.educationImg {
+    width: 100%;
+}
+
+.contactContainer h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.contact {
+    max-width: 900px;
+    margin: 2em auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 0.3rem double black;
+    outline: none;
+    font-size: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 14px;
+    }
+    .imgContainer {
+        width: 30%;
+    }
+
+    .educations {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40%;
+        margin-bottom: 2rem;
+        margin-right: 1rem;
+    }
+
+    .btnContact{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mainSection {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .contentBox {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .contentBox h1 {
+        font-size: 2rem;
+    }
+    .contentBox p{
+        font-size: 1rem;
+    }
+
+    .educations {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 70%;
+        margin: 1rem;
+    }
+
+    .contact {
+        width: 70%;
+        margin: 1rem auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 0.3rem;
+        border: 0.1rem solid black
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .imgContainer {
+        width: 50%;
+    }
+
+    .homeImg {
+        width: 200px;
+    }
+
+    .fcon {
+        display: none;
+    }
+
+    .btnContact {
+        margin-bottom: 100px;
+    }
+}

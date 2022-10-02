@@ -1,0 +1,41 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: chartreuse;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.line {
+    width: 30%;
+}
+
+hr {
+    margin-bottom: 00.5rem;
+}
+
+.icon {
+    margin-right: 1rem;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: chocolate;
+}
+
+.cr {
+    text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+    .line {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:568px) {
+    hr {
+        display: none;
+    }
+}
